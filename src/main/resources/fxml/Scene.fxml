@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.fds.Controller.FXMLController">
+   <children>
+      <JFXButton layoutX="110.0" layoutY="416.0" onAction="#btn" prefHeight="48.0" prefWidth="199.0" text="SignUP" />
+      <JFXTextField fx:id="emailField" layoutX="123.0" layoutY="270.0" promptText="Email" />
+      <JFXTextField fx:id="usernameField" layoutX="123.0" layoutY="196.0" promptText="Username" />
+      <JFXTextField fx:id="nameField" layoutX="123.0" layoutY="134.0" promptText="Full name" />
+      <JFXPasswordField fx:id="passwordField" layoutX="123.0" layoutY="344.0" promptText="Paaword" />
+   </children>
+</AnchorPane>

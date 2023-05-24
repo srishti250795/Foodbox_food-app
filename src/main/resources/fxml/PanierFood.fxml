@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane layoutX="20" prefHeight="665.0" prefWidth="901.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.fds.Controller.PanierFoodController">
+   <children>
+      <AnchorPane layoutX="48.0" prefHeight="65.0" prefWidth="783.0" style="-fx-background-color: #510A32; -fx-background-insets: 2;">
+         <children>
+            <Label layoutX="31.0" layoutY="6.0" prefHeight="65.0" prefWidth="186.0" text="Mon Panier" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="SHOPPING_CART" size="30" wrappingWidth="29.0" />
+               </graphic>
+            </Label>
+            <JFXButton id="confirmer" fx:id="confirmerButton" layoutX="511.0" layoutY="17.0" onMouseClicked="#confirmerAction" prefHeight="37.0" prefWidth="111.0" styleClass="confirmer" text="Confirmer" textFill="WHITE" />
+            <JFXButton fx:id="afficherButton" layoutX="652.0" layoutY="19.0" onMouseClicked="#afficherAction" prefHeight="37.0" prefWidth="111.0" styleClass="afficher" text="Afficher" textFill="WHITE" />
+            <JFXButton id="tracker" fx:id="trackerButton" layoutX="652.0" layoutY="19.0" onMouseClicked="#trackerAction" prefHeight="37.0" prefWidth="111.0" styleClass="tracker" text="Tracker" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <ScrollPane layoutX="37.0" layoutY="286.0" prefHeight="340.0" prefWidth="804.0">
+         <content>
+            <TableView fx:id="tablePanier2" prefHeight="412.0" prefWidth="801.0">
+               <columns>
+                  <TableColumn fx:id="col_id" prefWidth="113.0" text="id" />
+                  <TableColumn fx:id="col_address" prefWidth="245.0" text="Address" />
+                  <TableColumn fx:id="col_total" prefWidth="257.0" text="Total Prix" />
+                  <TableColumn fx:id="col_date" prefWidth="185.0" text="Date" />
+               </columns></TableView>
+         </content>
+      </ScrollPane>
+      <Label layoutX="66.0" layoutY="221.0" prefHeight="65.0" prefWidth="186.0" text="Historique d'achat">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="SHOPPING_CART" size="30" wrappingWidth="29.0" />
+         </graphic>
+      </Label>
+      <ImageView fitHeight="130.0" fitWidth="781.0" layoutX="49.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/food/banner.png" />
+         </image>
+         <viewport>
+            <Rectangle2D height="118.0" width="720.0" />
+         </viewport></ImageView>
+   </children>
+</AnchorPane>

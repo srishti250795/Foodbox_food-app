@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="564.0" prefWidth="1101.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@../styles/Styles.css" fx:controller="com.mycompany.fds.Controller.OnBoardController">
+   <children>
+      <Pane layoutX="-7.0" layoutY="-42.0" prefHeight="209.0" prefWidth="327.0" style="-fx-background-color: #510A32;" />
+      <VBox layoutY="159.0" prefHeight="417.0" prefWidth="320.0" style="-fx-background-color: #34495e;">
+         <children>
+            <JFXButton fx:id="menuButton" onAction="#handleClicks" prefHeight="83.0" prefWidth="320.0" style="-fx-background-color: #2D142C;" text="Menu" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="myAccountButton" onAction="#handleClicks" prefHeight="83.0" prefWidth="320.0" style="-fx-background-color: #2D142C;" text="Mon compte" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="myOrdersButton" onAction="#handleClicks" prefHeight="83.0" prefWidth="320.0" style="-fx-background-color: #2D142C;" text="Mes commandes" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="myDeliveryButton"  onAction="#handleClicks" prefHeight="83.0" prefWidth="320.0" style="-fx-background-color: #2D142C;" text="Livraison" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="logoutButton" onAction="#handleClicks" prefHeight="83.0" prefWidth="320.0" style="-fx-background-color: #2D142C;" text="Se déconnecter" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+      <StackPane layoutX="320.0" prefHeight="576.0" prefWidth="782.0">
+         <children>
+            <Pane id="card" fx:id="menuPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F2F2F2;">
+               <children>
+                  <Pane id="card" fx:id="mcdo" layoutX="18.0" layoutY="212.0" prefHeight="223.0" prefWidth="228.0" style="-fx-background-color: #FFFFFF;">
+                     <children>
+                        <Label fx:id="descriptionCard" layoutX="57.0" layoutY="165.0" prefHeight="46.0" prefWidth="114.0" text="McDonald’s" textAlignment="CENTER">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="157.0" fitWidth="213.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/food/mcdo.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="burgerKing" layoutX="283.0" layoutY="209.0" prefHeight="223.0" prefWidth="228.0" style="-fx-background-color: #FFFFFF;">
+                     <children>
+                        <Label fx:id="descriptionCard1" layoutX="57.0" layoutY="165.0" prefHeight="46.0" prefWidth="114.0" text="Burger King" textAlignment="CENTER">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="144.0" fitWidth="208.0" layoutX="12.0" layoutY="8.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/food/burgerking.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="kfc" layoutX="541.0" layoutY="208.0" prefHeight="223.0" prefWidth="228.0" style="-fx-background-color: #FFFFFF;">
+                     <children>
+                        <Label fx:id="descriptionCard11" layoutX="86.0" layoutY="165.0" prefHeight="46.0" prefWidth="49.0" text="KFC" textAlignment="CENTER">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="149.0" fitWidth="213.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/food/kfc.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children></Pane>
+            <Pane fx:id="myAccountPane" prefHeight="200.0" prefWidth="200.0" />
+            <Pane fx:id="myOrdersPane" prefHeight="200.0" prefWidth="200.0" />
+            <Pane fx:id="myDeliveryPane" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
